@@ -1,0 +1,8 @@
+<div>
+    <textarea [(ngModel)]="cipherText" placeholder="Enter Name"></textarea>
+    <button (click)="decryptText()">Decrypt</button>
+</div>
+<div *ngIf="cipherText">
+    <h4>Decrypted Text</h4>
+    <p>{{decryptedText}}</p>
+</div>
