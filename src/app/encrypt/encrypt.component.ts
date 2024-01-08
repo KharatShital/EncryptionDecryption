@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as CryptoJS from 'crypto-js';
+import CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-encrypt',
@@ -10,9 +10,9 @@ export class EncryptComponent {
 
   cipherText :string='';
   plainText:string='';
+
   ecryptText(){
-  
   this.cipherText=CryptoJS.AES.encrypt(this.plainText,'secret-key').toString();
-}
-  
+  console.log("Encrypt value:",this.ecryptText);
+
 }

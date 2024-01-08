@@ -1,6 +1,6 @@
 <div>
-<textarea [(ngModel)]="plainText" placeholder="Enter Text To Encrypt"></textarea>
-<button (click)="ecryptText()">Encrypt</button>
+<textarea matInput placeholder="Enter Text To Encrypt" [(ngModel)]="plainText"></textarea>
+<button mat-flat-button color="primary" (click)="ecryptText()">Encrypt</button>
 </div>
 <div *ngIf="cipherText">
     <h4>Encrypt Text</h4>

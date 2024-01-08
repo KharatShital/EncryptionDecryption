@@ -11,6 +11,7 @@ decryptedText:string='';
 decryptText(){
   const bytes=CryptoJS.AES.decrypt(this.cipherText,'secret-key');
   this.decryptedText=bytes.toString(CryptoJS.enc.Utf8);
+  console.log("Decrypt value:",this.decryptedText);
 
 }
 }
