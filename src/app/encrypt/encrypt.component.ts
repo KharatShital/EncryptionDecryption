@@ -13,6 +13,7 @@ export class EncryptComponent {
 
   ecryptText(){
   this.cipherText=CryptoJS.AES.encrypt(this.plainText,'secret-key').toString();
-  console.log("Encrypt value:",this.ecryptText);
+  console.log("Encrypt value:",this.cipherText);
 
+}
 }
